@@ -37,7 +37,7 @@ Warning: You need Pterodactyl already set up on a domain for this method to work
 
 ### Direct method
 <strong>1.1</strong> Install NodeJS : 
-- `apt install nodejs npm -y
+- `apt install nodejs npm -y`
 - reopen a new ssh session (eg restart putty)
 - Verify By Using `node -v`
 
