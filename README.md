@@ -19,11 +19,6 @@ All features:
 - Admin (set/add/remove coins & resources, create/revoke coupons)
 - API (for bots & other things)
 
-# What happened to 13.x and 15.x?
-
-Due to major issues with both versions, we've decided to come back to v12 and recontinue it
-The latest versions will be on v12 now
-
 # Warning
 
 We cannot force you to keep the "Powered by Heliactyl" in the footer, but please consider keeping it. It helps getting more visibility to the project and so getting better. We won't do technical support for installations without the notice in the footer. We may DMCA the website in certain conditions.
@@ -67,11 +62,11 @@ To stop ctrl + C
 
 <strong>2.2</strong>  Start the server (Ignore the 2 strange errors that might come up)
 
-<strong>2.3</strong>  Login to your DNS manager, point the domain you want your dashboard to be hosted on to your VPS IP address. (Example: dashboard.domain.com 192.168.0.1)
+<strong>2.3</strong>  Login to your DNS manager, point the domain you want your dashboard to be hosted on to your Machine IP address. (Example: dashboard.domain.com 192.168.0.1)
 
-<strong>2.4</strong>  Run `apt install nginx && apt install certbot` on the vps
+<strong>2.4</strong>Run `apt install nginx && apt install certbot` on the machine
 
-<strong>2.5</strong>  Run `ufw allow 80` and `ufw allow 443` on the vps
+<strong>2.5</strong>  Run `ufw allow 80` and `ufw allow 443` on the machine 
 
 <strong>2.6</strong>  Run `certbot certonly -d <Your Heliactyl Domain>` then do 1 and put your email
 
@@ -122,10 +117,6 @@ From Heliactyl v11/v13 or Dashactyl v0.4 to Heliactyl v12:
 3. Delete all files off the server (or delete and remake the folder if done in ssh)
 4. Upload the latest Heliactyl v12 release and unzip it
 5. Upload database.sqlite and reconfigure settings.json
-
-From Heliactyl v15:
-- This is currently not possible due to major differences between the versions
-- You will have to install Heliactyl v12 and use a new database
 
 Move to a newer Heliactyl v12 release:
 1. Delete everything except settings.json, database.sqlite
