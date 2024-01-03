@@ -33,14 +33,13 @@ Warning: You need Pterodactyl already set up on a domain for this method to work
 
 <strong>1.1</strong> Upload the file above onto a Pterodactyl NodeJS server [Download the egg from Parkervcp's GitHub Repository](https://github.com/parkervcp/eggs/blob/master/generic/nodejs/egg-node-js-generic.json)
 
-<strong>1.2</strong> Unarchive the file and set the server to use NodeJS 16
+<strong>1.2</strong> Unarchive the file and set the server to use NodeJS 20
 
 ### Direct method
-<strong>1.1</strong> Install nodejs16, it's recommended to install it with nvm : 
-- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
+<strong>1.1</strong> Install NodeJS : 
+- `apt install nodejs npm -y
 - reopen a new ssh session (eg restart putty)
-- `nvm install 16`
-- check the node version with `node -v` and switch between versions with `nvm use <version>`
+- Verify By Using `node -v`
 
 <strong>1.2</strong> Download heliactyl files in /var/www/heliactyl :
 - `git clone https://github.com/OpenHeliactyl/Heliactyl.git /var/www/heliactyl`
